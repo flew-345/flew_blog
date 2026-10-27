@@ -2,7 +2,7 @@
 
 采用前后端分离架构的个人博客。本阶段先完成前端设计与交互，通过模拟数据独立运行；后续通过统一接口接入后端。
 
-> 当前进度：项目约定与版本管理初始化。尚未生成前端应用、安装依赖或接入后端。下文的页面、目录和接口均为后续实施约定，不代表已经完成。
+> 当前进度：已完成项目约定文档、Git 忽略规则与本地初始提交。尚未生成前端应用、安装依赖或接入后端。下文的页面、目录和接口均为后续实施约定，不代表已经完成。
 
 ## 1. 已确认的需求
 
@@ -26,7 +26,7 @@
 | 视觉风格 | 简洁、留白充足、以阅读体验为主，强调色可调整 | 待确定参考风格 |
 | 配色 | 浅色与深色主题，首次跟随系统，记住用户选择 | 建议 |
 | 站点资料 | 博客名称、头像、简介、社交链接 | 待提供 |
-| GitHub | 账号 [flew-345](https://github.com/flew-345) | 待确定具体仓库地址与可见性 |
+| GitHub | 仓库 [flew-345/flew_blog](https://github.com/flew-345/flew_blog) | 已确认仓库地址 |
 | 部署方式 | 静态托管；部署平台与域名后续确定 | 待确定 |
 
 后端语言、数据库、身份认证和管理系统不在当前阶段选型或实现。
@@ -174,12 +174,12 @@ git revert COMMIT_ID
 
 ## 8. GitHub 同步
 
-GitHub 账号主页：[flew-345](https://github.com/flew-345)。当前提供的链接是仓库列表页，不能直接用作 Git 远端；具体仓库、公开或私有属性及认证方式尚待确定。
+GitHub 仓库：[flew-345/flew_blog](https://github.com/flew-345/flew_blog)。仓库可见性沿用现有设置。
 
-确认远端仓库后，将其真实克隆地址配置为 `origin`。以下命令中的 `REPOSITORY_URL` 必须先替换：
+首次配置远端并推送的命令如下。若本地已经配置 `origin`，先检查地址，不重复添加：
 
 ```bash
-git remote add origin REPOSITORY_URL
+git remote add origin https://github.com/flew-345/flew_blog.git
 git remote -v
 git push -u origin main
 ```
